@@ -1,0 +1,36 @@
+{
+  "name": "wedding-projects",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "@material-ui/core": "4.11.1",
+    "@material-ui/icons": "4.11.2",
+    "connected-react-router": "6.8.0",
+    "history": "5.0.0",
+    "material-ui": "0.20.2",
+    "react": "17.0.0",
+    "react-dom": "17.0.0",
+    "react-redux": "7.2.2",
+    "react-router": "5.2.0",
+    "react-scripts": "3.4.3",
+    "react-swipeable-views": "0.13.9",
+    "redux": "4.0.5"
+  },
+  "devDependencies": {
+    "typescript": "3.8.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

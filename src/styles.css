@@ -1,0 +1,16 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* サイドバーのスタイルシート */
+.sidebar-container {
+  background-color: white;
+  color: #666;
+}
+
+.sidebar-title {
+  font-size: 15vw;
+  color: #666;
+  font-weight: 700;
+}
