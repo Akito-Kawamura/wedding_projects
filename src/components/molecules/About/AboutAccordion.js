@@ -6,6 +6,8 @@ import AccordionDetails from "@material-ui/core/AccordionDetails";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
+import AboutCards from "./AboutCards";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%"
@@ -19,28 +21,20 @@ const useStyles = makeStyles((theme) => ({
 export default function AboutAccordion() {
   const classes = useStyles();
 
-  let AccordionDict = [];
-
-  for (let i = 0; i < 2; i++) {
-    AccordionDict.push(
+  return (
+    <div className={classes.root}>
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography className={classes.heading}>Birth</Typography>
+          <Typography className={classes.heading}>Accordion 1</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
+          <AboutCards />
         </AccordionDetails>
       </Accordion>
-    );
-  }
-  console.log(AccordionDict);
-
-  return <div className={classes.root}>{AccordionDict}</div>;
+    </div>
+  );
 }
