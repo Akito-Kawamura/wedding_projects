@@ -1,19 +1,24 @@
 import React from "react";
 import Header from "./Header";
+import Footer from "./Footer";
 import Sidebar from "../containers/sidebar";
 import Content from "../containers/content";
-import { lightWhite } from "material-ui/styles/colors";
 const App = () => {
   return (
-    <div style={styles.main}>
-      <div style={styles.side}>
-        <Sidebar />
-      </div>
-      <div style={styles.contents}>
-        <Content />
-      </div>
-      <div style={styles.header}>
-        <Header />
+    <div class="wrapper">
+      <div style={styles.main}>
+        <div style={styles.side}>
+          <Sidebar />
+        </div>
+        <div style={styles.contents}>
+          <Content />
+        </div>
+        <div style={styles.header}>
+          <Header />
+        </div>
+        <div style={styles.footer}>
+          <Footer />
+        </div>
       </div>
     </div>
   );
@@ -43,10 +48,16 @@ const styles = {
     marginTop: "8vh"
   },
   header: {
-    position: "fixed",
+    position: "absolute",
     width: "100vw",
-    height: "10vh",
     right: 0,
+    top: 0,
     backgroundColor: "balck"
+  },
+  footer: {
+    width: "100vw",
+    right: 0,
+    backgroundColor: "balck",
+    marginTop: "auto"
   }
 };
